@@ -1,100 +1,14 @@
-footer{
-  display: block;
-  margin-top: 5%;
-}
-ol,
-ul,
-dl {
-  margin-top: 0;
-  margin-bottom: 1rem; }
-
-ol ol,
-ul ul,
-ol ul,
-ul ol {
-  margin-bottom: 0; }
-a {
-  color: #007bff;
-  text-decoration: none;
-  background-color: transparent; }
-  a:hover {
-    color: #0056b3;
-    text-decoration: underline; }
-
-a:not([href]):not([tabindex]) {
-  color: inherit;
-  text-decoration: none; }
-  a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
-    color: inherit;
-    text-decoration: none; }
-  a:not([href]):not([tabindex]):focus {
-    outline: 0; }
-
-a {
-  -webkit-transition: .3s all ease;
-  -o-transition: .3s all ease;
-  transition: .3s all ease; }
-  a:hover, a:focus {
-    text-decoration: none !important;
-    outline: none !important; }
-
-.ftco-footer-social li {
-  list-style: none;
-  margin: 0 10px 0 0;
-  display: inline-block; }
-  .ftco-footer-social li a {
-    height: 30px;
-    width: 30px;
-    display: block;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 50%;
-    position: relative; }
-    .ftco-footer-social li a span {
-      position: absolute;
-      font-size: 10px;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%); }
-    .ftco-footer-social li a:hover {
-      color: $beige; }
-
-.ftco-section {
-  padding: 12em 0; }
-  .ftco-section h2 {
-    margin-bottom: 0; }
-
 footer {
-  padding: 7em 0; }
+  margin-top: auto;
+  text-align: center;
+  color: $beige;
+  padding: 25px 0;
+  background: $black;
+  width: 100%;
+  opacity: 0.8;
 
-.footer-07 {
-  background: #121212;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1em; /* Adjust the top padding to reduce the height */
-  padding-bottom: 3em; /* Adjust the bottom padding to reduce the height */
-  padding-left: 15px;
-  padding-right: 15px;
 }
-  .footer-07 a {
-    color: $orange }
-  .footer-07 p {
-    color: rgba(255, 255, 255, 0.3); }
-  .footer-07 .footer-heading {
-    font-size: 25px;
-    color: $beige;
-    font-weight: 700;
-    margin-bottom: 30px; }
-    .footer-07 .footer-heading .logo {
-      color: $beige; }
-  .footer-07 .menu {
-    margin-bottom: 30px; }
-    .footer-07 .menu a {
-      color: rgba(255, 255, 255, 0.6);
-      margin: 0 10px;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
-  .footer-07 .ftco-footer-social li a {
-    background: transparent;
-    border: 1px solid $orange }
+
+footer .copyright {
+  margin-bottom: 0.3rem;
+}
