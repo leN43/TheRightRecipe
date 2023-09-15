@@ -2,18 +2,43 @@
   <div class="row">
     <div class="col">
       <div class="cadre">
-          <h1>TheRightRecipe</h1>
           <div class="box">
+            <h1>TheRightRecipe</h1>
             <h2>Get a Recipe</h2>
             <div class="search-container">
               <input type="text"
               placeholder="Enter an ingredient"
               id="ingredient"
               >
-              <button class="btn btn-outline-dark btn-lg">SEARCH</button>
+              <button class="btn btn-outline-primary btn-lg" id="searchBtn">SEARCH</button>
               </div>
               <div id="result">
-                <h2>La recette</h2>
+                <img src=https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1998&q=80>
+    <div class="details mt-2">
+        <h2>Title</h2>
+        <h4>Time prep : 20 min</h4>
+    </div>
+    <div id="ingredient-con">
+      <ul>
+        <li>Apple</li>
+        <li>Wine</li>
+        <li>Banana</li>
+        <li>Water</li>
+        <li>Apple</li>
+        <li>Wine</li>
+        <li>Banana</li>
+        <li>Water</li>
+
+      </ul>
+    </div>
+    <div id="recipe">
+        <button id="hide-recipe">X</button>
+        <pre id="instructions">
+          1 COOKING
+          2 PREP
+          </pre>
+    </div>
+    <button id="view-recipe">View Recipe</button>
               </div>
             </div>
 
