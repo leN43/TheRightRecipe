@@ -2,10 +2,12 @@ footer {
   margin-top: auto;
   text-align: center;
   color: $beige;
-  padding: 25px 0;
+  padding: 10px 0;
   background: $black;
   width: 100%;
-  opacity: 0.8;
+  opacity: 0.9;
+  position: sticky;
+  top: 50em;
 
 }
 

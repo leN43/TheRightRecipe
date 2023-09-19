@@ -14,14 +14,17 @@ img {
   font-weight: 400;
 }
 #view-recipe {
-  font-size: 1em;
-  padding: 0.9em 0.6em;
-  background-color: $orange;
+  font-size: 1.3em;
+  color: $black;
+  font-weight: 900;
+  padding: 0.9em 0.4em;
   border: none;
   top: 1.5em;
   border-radius: 0.3em;
-  font-weight: 600;
   width: 100%;
+  outline-color: $orange;
+  outline-style: double;
+  border: none;
 }
 #recipe {
   text-align: center;
@@ -35,31 +38,30 @@ img {
   border-radius: 0.6em;
   display: none;
 }
-#recipe pre {
+#recipe p {
+  margin-top: 0;
+  margin-bottom: 0;
   text-align: center;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  font-size: 1em;
+  font-size: 1.2em;
   color: $black;
 }
 #hide-recipe {
   font-size: 1em;
   position: relative;
-  width: 1.8em;
-  height: 1.8em;
+  width: 2.8em;
+  height: 2.8em;
   background-color: $orange;
   border: none;
-  top: 1.2em;
+  top: 0.3em;
   left: 40%;
   border-radius: 0.3em;
 }
-ul {
-  font-size: 1.2em;
+.result ul {
+  font-size: 1em;
   font-weight: 600;
   position: relative;
   display: grid;
   grid-template-columns: auto auto;
-  gap: 0.2em 1.1em;
   color: $black;
   text-transform: capitalize;
   outline-style: double;
@@ -75,4 +77,15 @@ h3 {
   .container {
     font-size: 14px;
   }
+}
+#like-recipe {
+  font-size: 1em;
+  position: relative;
+  width: 2.8em;
+  height: 2.8em;
+  background-color: $orange;
+  border: none;
+  top: 0.3em;
+  right: 40%;
+  border-radius: 0.3em;
 }

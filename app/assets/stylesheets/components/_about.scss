@@ -1,0 +1,12 @@
+.rectangle{
+  margin-top: 10%;
+  margin-left: 30%;
+  width: 80%;
+  max-width: 28em;
+  background: var(--transp-white-2);
+  backdrop-filter: blur(10px);
+  padding: 4em 2.5em;
+  border: 2px solid var(--transp-white-2);
+  border-radius: 1.6em;
+  box-shadow: 0 1.8em 3.7em var(--shadow);
+}
