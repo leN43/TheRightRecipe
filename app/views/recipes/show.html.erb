@@ -1,0 +1,15 @@
+<div class="container mt-6 text-center ">
+  <div class="rectangle mb-4">
+<h1><%= @recipe.title %></h1>
+<div class="details mt-2">
+<h4>Time prep: <%= @recipe.timeprep %> min</h4>
+</div>
+<img src=<%= @recipe.img %>>
+<div id="ingredient-con">
+  <p><%= @recipe.ingredients   %></p>
+</div>
+<p><%= @recipe.instructions %></p>
+<%= button_to "Delete", recipe_path(:id => @recipe.id), :method => :delete,class:'btn btn-primary btn-lg btn-block' %>
+</div>
+  <!-- Add more content here -->
+</div>

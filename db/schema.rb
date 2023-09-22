@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_13_092043) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_22_075037) do
   create_table "comments", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "recipe_id", null: false
@@ -21,24 +21,29 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_13_092043) do
     t.index ["user_id"], name: "index_comments_on_user_id"
   end
 
-  create_table "favorite_recipes", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "recipe_id", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["recipe_id"], name: "index_favorite_recipes_on_recipe_id"
-    t.index ["user_id"], name: "index_favorite_recipes_on_user_id"
-  end
-
   create_table "recipes", force: :cascade do |t|
     t.string "title"
     t.text "instructions"
-    t.integer "rating"
     t.integer "timeprep"
     t.string "img"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "ingredients"
+    t.integer "recipe_id"
+    t.integer "user_id", null: false
+    t.index ["user_id"], name: "index_recipes_on_user_id"
+  end
+
+  create_table "saved_recipes", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.integer "recipe_id"
+    t.string "title"
+    t.text "instructions"
+    t.string "img"
+    t.integer "timeprep"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_saved_recipes_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -58,6 +63,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_13_092043) do
 
   add_foreign_key "comments", "recipes"
   add_foreign_key "comments", "users"
-  add_foreign_key "favorite_recipes", "recipes"
-  add_foreign_key "favorite_recipes", "users"
+  add_foreign_key "recipes", "users"
+  add_foreign_key "saved_recipes", "users"
 end
