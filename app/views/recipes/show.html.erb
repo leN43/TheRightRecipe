@@ -9,7 +9,10 @@
   <p><%= @recipe.ingredients   %></p>
 </div>
 <p><%= @recipe.instructions %></p>
+<div id="button-container">
 <%= button_to "Delete", recipe_path(:id => @recipe.id), :method => :delete,class:'btn btn-primary btn-lg btn-block' %>
+<%= button_to "Go Back", myRecipes_path, method: :get, class: 'btn btn-primary btn-lg btn-block' %>
+</div>
 </div>
   <!-- Add more content here -->
 </div>

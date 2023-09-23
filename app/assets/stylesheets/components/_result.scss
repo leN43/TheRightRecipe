@@ -90,8 +90,6 @@ h3 {
   border-radius: 0.3em;
 }
 #like-recipe a:hover,
-#like-recipe .active,
-#like-recipe .active:focus,
-#like-recipe li:hover>a {
-  color: pink;
+#like-recipe .active {
+  background-color: pink;
 }

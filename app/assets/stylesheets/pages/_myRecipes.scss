@@ -1,0 +1,19 @@
+.favList{
+  font-size: 1.3em;
+  list-style: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.favList a:hover{
+  color: $beige;
+}
+
+#button-container {
+  display: flex; /* Use flexbox to align buttons horizontally */
+  justify-content: space-between; /* Adjust this as needed (e.g., space-around, center) */
+}
+
+/* Optional: Add margin to buttons for spacing */
+.btn {
+  margin: 0 5px; /* Adjust the margin as needed */
+}

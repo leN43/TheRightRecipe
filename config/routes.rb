@@ -5,7 +5,6 @@ Rails.application.routes.draw do
  end
   root 'pages#home'
   get 'about', to: 'pages#about'
-  get 'profile', to: 'pages#profile'
 
   # Define a route for retrieving saved recipes using a GET request
   get 'myRecipes', to: 'recipes#myRecipes'

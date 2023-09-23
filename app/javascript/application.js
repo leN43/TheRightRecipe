@@ -75,7 +75,7 @@ button.addEventListener("click", () => {
             <div id="recipe">
               <button id="hide-recipe">X</button>
               <button id="like-recipe" data-recipe-id="${recipeId}"><i class="fa-regular fa-heart"></i></button>
-              <p id="instructions">${recipeInstructions}</p>
+              <p class="instructions mt-4">${recipeInstructions}</p>
             </div>
             <button class="btn btn-outline-primary" id="view-recipe">View Recipe</button>
           `;
@@ -95,7 +95,7 @@ button.addEventListener("click", () => {
       // Handle click on "view-recipe" button
       recipe.style.display = "block";
     } else if (event.target.id === "like-recipe") {
-      console.log("Liked");
+      alert("You added the recipe to your favorites!");
       const recipeData = {
         title: recipeTitle,
         instructions: recipeInstructions,
