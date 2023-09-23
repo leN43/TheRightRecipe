@@ -1,5 +1,5 @@
 class RecipesController < ApplicationController
-  before_action :authenticate_user!
+  before_action :authenticate_user!, only: [:myRecipes]
   def new
     @recipe = Recipe.new
   end
@@ -9,7 +9,12 @@ class RecipesController < ApplicationController
   end
 
   def myRecipes
-    @recipes = current_user.recipes
+    if current_user
+      @recipes = current_user.recipes
+    else
+      # Redirect to a meaningful location, such as the root path or the sign-in page
+      redirect_to root_path, alert: 'You need to sign in to access your recipes.'
+    end
   end
 
   def create
