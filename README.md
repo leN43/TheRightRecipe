@@ -35,7 +35,8 @@ $rails s
     
 ## Screenshots
 Type an ingredient name in the search bar
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![screnshot](screeTrr/trrHomeType.png)
+
 Press the SEARCH button and get a random Recipe you can cook in 
  min or lss
 ![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
