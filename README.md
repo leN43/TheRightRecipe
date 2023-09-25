@@ -32,19 +32,19 @@ $rails s
 
 
 ```
-    
+   
 ## Screenshots
 Type an ingredient name in the search bar
 ![screnshot](screeTrr/trrHomeType.png)
-
-Press the SEARCH button and get a random Recipe you can cook in 
- min or lss
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+Press the SEARCH button and get a random Recipe you can cook in 30 min or less
 Press VIEW RECIPE to see the instructions
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![screnshot](screeTrr/trrRecipe.png)
+Press VIEW RECIPE to see the instructions
+![screnshot](screeTrr/trrRecipe.png)
 You can add the recipe to your favorites 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-Check out all your favorites Recipes
-
+![screnshot]( screeTrr/trrRecipeAdded.png)
+Check out all your favorites Recipes after login in
+![screnshot]( screeTrr/trrLogin.png)
+![screnshot]( screeTrr/trrFavRecipe.png)
 ## 🛠 Skills
 Ruby rails javascript postgresql git github heroku shtml5 cs3 bootstrap
