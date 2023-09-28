@@ -12,7 +12,7 @@ button.addEventListener("click", () => {
   // Get the ingredient value inside the event listener
   let ingredient = document.getElementById("ingredient").value;
 
-  const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=20&apiKey=ef3e2f2bdda94aa694b44c764cabbf8f`;
+  const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredient}&number=40&apiKey=ef3e2f2bdda94aa694b44c764cabbf8f`;
 
   fetch(url)
     .then((response) => response.json())
